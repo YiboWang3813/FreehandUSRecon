@@ -565,9 +565,13 @@ class Generator(nn.Module):
 
 
     def forward(self, x):
+        """ 
+        input shape: [B, C, D, H, W] 
+        output shape: [B, 6] 
+        """
 
         # diary = True
-        diary = False
+        diary = True 
 
         if diary == True:
             print('give {}'.format(x.shape))
@@ -634,7 +638,7 @@ class Generator(nn.Module):
 
             x = self.fc3(x)
             print('19_fc {}'.format(x.shape))
-            time.sleep(30)
+            # time.sleep(30)
         else:
             x = self.conv3d_1(x)
             x = self.relu(x)

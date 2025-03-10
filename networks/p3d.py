@@ -8,6 +8,8 @@ import math
 from functools import partial
 import time
 
+# import logging as log 
+
 __all__ = ['P3D', 'P3D63', 'P3D131','P3D199']
 
 def conv_S(in_planes,out_planes,stride=1,padding=1):
@@ -320,7 +322,7 @@ def get_optim_policies(model=None,modality='RGB',enable_pbn=True):
     bn = []
 
     if model==None:
-        log.l.info('no model!')
+        # log.l.info('no model!') 
         exit()
 
     conv_cnt = 0

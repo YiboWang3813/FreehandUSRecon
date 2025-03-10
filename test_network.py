@@ -38,8 +38,8 @@ all_ids = np.concatenate((train_ids, val_ids, test_ids), axis=0)
 
 mask_img = cv2.imread('data/US_mask.png', 0)
 
-# frames_folder = '/home/guoh9/tmp/US_vid_frames'
-# pos_folder = '/home/guoh9/tmp/US_vid_pos'
+frames_folder = '/home/guoh9/tmp/US_vid_frames'
+pos_folder = '/home/guoh9/tmp/US_vid_pos'
 
 # frames_folder = '/zion/guoh9/US_recon/US_vid_frames'
 # pos_folder = '/zion/guoh9/US_recon/US_vid_pos'

@@ -205,31 +205,3 @@ def dof_MSE(labels, outputs, criterion, dof_based=False):
 
     return loss
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

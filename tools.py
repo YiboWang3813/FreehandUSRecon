@@ -180,7 +180,7 @@ def params_to_mat44(trans_params, cam_cali_mat):
     trans_mat[3, 3] = 1
 
     trans_mat = np.dot(cam_cali_mat, trans_mat)
-    trans_mat = inv(trans_mat)
+    trans_mat = np.linalg.inv(trans_mat)
 
     return trans_mat
 
